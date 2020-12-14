@@ -1,12 +1,12 @@
 # ----
 # Site
 
-title: Aviator
-description: Jekyll template for API documentation.
-url: https://example.com
+title: OpenAPI Sandbox
+description: Sandbox API documentation.
+url: https://ekoyudhi.id/api-sandbox
 google_analytics_key:
 permalink: pretty
-baseurl:
+baseurl: https://ekoyudhi.id/api-sandbox
 
 # -----
 # Build
