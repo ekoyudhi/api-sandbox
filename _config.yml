@@ -6,7 +6,7 @@ description: Sandbox API documentation.
 url: "https://ekoyudhi.id/api-sandbox"
 google_analytics_key:
 permalink: pretty
-baseurl: "ekoyudhi.id/api-sandbox"
+baseurl: "tes"
 
 # -----
 # Build
