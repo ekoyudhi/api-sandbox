@@ -3,10 +3,10 @@
 
 title: OpenAPI Sandbox
 description: Sandbox API documentation.
-url: "https://ekoyudhi.id/api-sandbox"
+url: 
 google_analytics_key:
 permalink: pretty
-baseurl: 
+baseurl: https\://ekoyudhi.id/api-sandbox
 
 # -----
 # Build
