@@ -1,27 +1,16 @@
 ---
-title: Getting Started
+title: Pengantar
 position_number: 1
 parameters:
   - name:
     content:
 content_markdown: |-
-  Welcome to our API.
+  Selamat datang di Sandbox OpenAPI kami.
 
-  This API document is designed for those interested in developing for our platform.
+  Dokumentasi API ini didesain untuk siapa saja yang tertarik untuk pengembangan aplikasi pada platform kami.
 
-  This API is still under development and will evolve.
+  API ini masih dalam tahap pengembangan dan akan diperbaiki secara terus-menerus.
 
-  You'll succeed if you do this.
-  {: .success }
-
-  Here's some useful information.
-  {: .info }
-
-  Something may not happen if you try and do this.
-  {: .warning }
-
-  Something bad will happen if you do this.
-  {: .error }
 left_code_blocks:
   - code_block:
     title:

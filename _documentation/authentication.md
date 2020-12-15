@@ -1,29 +1,39 @@
 ---
-title: Authentication
+title: Autentikasi
 position_number: 2
 parameters:
   - name:
     content:
 content_markdown: |-
-  You need to be authenticated for all API requests. You can generate an API key in your developer dashboard.
+  Anda membutuhkan autentikasi untuk memanggil API. Anda dapat men-generate API Key dan API Secret Key pada dasbor anda.
 
-  Add the API key to all requests as a GET parameter.
+  Tambahkan API Key dan API Secret Key pada pada saat mengakses endpoint autentikasi untuk mendapatkan Token. 
+  
+  Token akan dipakai pada setiap request ke endpoint URL (akses menggunakan Bearer Token)
 
-  Nothing will work unless you include this API key
-  {: .error}
 left_code_blocks:
-  - code_block:
+  - code_block: |2-
+      curl -u "YOUR_API_KEY:YOUR_API_SECRET_KEY" https://api.twitter.com/oauth2/token
     title:
     language:
 right_code_blocks:
   - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
-    title: JQuery
+      {
+          "token_type": "bearer",
+          "access_token": "AAAAAAAAAAAAAAAAAAAAAFQpwwAAAAAAJVx3Dsboo1opmVc1WMyw0qfj7fU%3DQN5MNkSM40tQnBa258xxYMdc8QfgRqkrqZHuru55AI3u12TGUP"
+      }
+    title: Response Success
     language: javascript
   - code_block: |2-
-       curl http://api.myapp.com/books?token=YOUR_APP_KEY
-    title: Curl
-    language: bash
+       {
+            "errors": [
+                {
+                    "code": 99,
+                    "message": "Unable to verify your credentials",
+                    "label": "authenticity_token_error"
+                }
+            ]
+        }
+    title: Response Error
+    language: javascript
 ---
