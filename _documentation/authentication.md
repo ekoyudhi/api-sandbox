@@ -22,18 +22,18 @@ right_code_blocks:
         "token_type": "bearer",
         "access_token": "AAAAAAAAAAAAAAAAAAAAAFQpwwAAAAAAJVx3Dsboo1opmVc1WMyw0qfj7fU%3DQN5MNkSM40tQnBa258xxYMdc8QfgRqkrqZHuru55AI3u12TGUP"
       }
-    title: Response Success
+    title: Response
     language: javascript
   - code_block: |2-
        {
           "errors": [
             {
-                "code": 99,
-                "message": "Unable to verify your credentials",
-                "label": "authenticity_token_error"
+              "code": 99,
+              "message": "Unable to verify your credentials",
+              "label": "authenticity_token_error"
             }
           ]
         }
-    title: Response Error
+    title: Errors
     language: javascript
 ---
